@@ -1,3 +1,29 @@
 body {
   font-size: 16px;
 }
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 5%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.book-list {
+  padding: 16px 5%;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.form-add-book {
+  padding: 16px 5%;
+}

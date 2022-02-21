@@ -1,9 +1,9 @@
 import './App.css';
-import BooksContainer from './components/BooksContainer';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <BooksContainer />
+    <Home />
   );
 }
 

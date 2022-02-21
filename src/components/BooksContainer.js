@@ -4,7 +4,6 @@ import Header from './Header';
 
 const BooksContainer = () => (
   <>
-    <Header />
     <BooksLit />
     <AddBookForm />
   </>

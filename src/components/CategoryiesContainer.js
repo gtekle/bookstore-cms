@@ -1,5 +1,9 @@
 const CategoriesContainer = () => {
-  return <h2>Under construction!</h2>
+  return (
+    <div className="categories-container">
+      <p>This page is under construction!</p>
+    </div>
+  )
 }
 
 export default CategoriesContainer;

@@ -1,1 +1,1 @@
-# bookstore-cms
+# Bookstore CMS

@@ -9,6 +9,18 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
 
+const getArrayFormatResponse = (data) => {
+  const responseArray = [];
+
+  for (let i = 1; i < Object.keys(data).length; i += 1) {
+    const id = Object.keys(data)[i];
+    const { title, category } = data[id][0];
+    responseArray.push({ id, title, category });
+  }
+
+  return responseArray;
+};
+
 export const fetchBooks = () => async (dispatch) => {
   try {
     const response = await axios.request({
@@ -16,17 +28,9 @@ export const fetchBooks = () => async (dispatch) => {
       url: `/apps/${APP_ID}/books`,
     });
 
-    const responseArray = [];
-
-    for (let i = 1; i < Object.keys(response.data).length; i += 1) {
-      const id = Object.keys(response.data)[i];
-      const { title, category } = response.data[id][0];
-      responseArray.push({ id, title, category });
-    }
-
     dispatch({
       type: FETCH_SUCCESS,
-      payload: responseArray,
+      payload: getArrayFormatResponse(response.data),
     });
   } catch (error) {
     dispatch({

@@ -1,22 +1,22 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/books/books';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
 
   const deleteBookFromStore = (e) => {
     const { id } = e.target;
-    dispatch(removeBook({ id }));
+    dispatch(deleteBook(id));
   };
 
   return (
     <div className="book">
       <div className="book-detail">
-        <p>category</p>
+        <p>{book.category}</p>
         <h3>{book.title}</h3>
-        <p>{book.author}</p>
+        <p>{book.author || 'John Doe'}</p>
         <button type="button">Comments</button>
         <button type="button" id={book.id} onClick={deleteBookFromStore}>Remove</button>
         <button type="button">Edit</button>
@@ -37,7 +37,8 @@ Book.propTypes = {
   book: PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    author: PropTypes.string,
   }).isRequired,
 };
 

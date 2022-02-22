@@ -63,6 +63,16 @@ export const removeBook = (payload) => ({
   payload,
 });
 
+export const deleteBook = (id) => async (dispatch) => {
+  const response = await axios.request({
+    baseURL: BASE_URL,
+    url: `/apps/${APP_ID}/books/${id}`,
+    method: 'DELETE',
+  });
+
+  if (response.status === 201) dispatch(removeBook({ id }));
+};
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:

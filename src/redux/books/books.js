@@ -41,6 +41,23 @@ export const addBook = (payload) => ({
   payload,
 });
 
+export const postBook = ({ id, title, category }) => async (dispatch) => {
+  const newBook = {
+    item_id: id,
+    title,
+    category,
+  };
+
+  const response = await axios.request({
+    baseURL: BASE_URL,
+    url: `/apps/${APP_ID}/books`,
+    method: 'POST',
+    data: newBook,
+  });
+
+  if (response.status === 201) dispatch(addBook({ id, title, category }));
+};
+
 export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,

@@ -9,13 +9,17 @@ body {
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
   background-color: #fafafa;
+  outline-color: rgba(0, 0, 0, 0.05);
 }
 
 .header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 16px 5%;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .logo {
@@ -33,18 +37,21 @@ body {
   margin-right: 16px;
 }
 
-.book-list {
-  padding: 16px 5%;
-}
-
 .book {
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
 }
 
 .form-add-book {
-  padding: 16px 5%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
 }
 
 .categories-container {

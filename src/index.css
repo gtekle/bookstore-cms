@@ -9,6 +9,17 @@
   src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'RobotoSlab';
+  src: local('RobotoSlab'), url('./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  font-weight: 700;
+  src: local('RobotoSlab'), url('./assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('ttf');
+}
+
 *,
 *::after,
 *::before {

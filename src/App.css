@@ -75,11 +75,170 @@ body {
 .book {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   margin: 2.313rem 6.25rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid #e8e8e8;
+}
+
+.book-detail {
+  width: 40%;
+}
+
+.book-detail > p {
+  width: 100%;
+}
+
+.book-detail p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.book-category {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  
+}
+
+.book-title {
+  margin: 0.188rem 20.188rem 0 0;
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+
+.book-author {
+  margin: 0.25rem 0 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.book-detail button {
+  cursor: pointer;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin: 1.3rem 0.938rem 0.125rem 0;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background: none;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2.125rem;
+  gap: 1rem;
+  width: 25%;
+}
+
+.circle-wrap {
+  min-width: 50px;
+  height: 50px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.progress-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-percentage {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.progress-completed {
+  opacity: 0.5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.vertical-separator {
+  align-self: flex-start;
+  width: 1px;
+  height: 6.375rem;
+  background-color: var(--white);
+  border: none;
+}
+
+.current-chapter-container {
+  width: 30%;
+  padding-left: 3.125rem;
+}
+
+.current-chapter {
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  opacity: 0.5;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.current-lesson {
+  font-family: RobotoSla, Arial, Helvetica, sans-serif;
+  margin: 0.43rem 0 0;
+  opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.btn-update-progress {
+  background: none;
+  border: none;
+  margin: 1.3rem 0 0;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .form-add-book {

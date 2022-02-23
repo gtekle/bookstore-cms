@@ -19,4 +19,5 @@
 html {
   box-sizing: border-box;
   --black-two: #121212;
+  --white: #e8e8e8;
 }

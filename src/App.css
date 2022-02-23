@@ -14,12 +14,16 @@ body {
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--white);
+}
+
+.logo-nav-container {
+  display: flex;
 }
 
 .logo {
@@ -54,6 +58,18 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
+}
+
+.profile-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--white);
+  background: none;
+}
+
+.profile-icon {
+  color: #0290ff;
 }
 
 .book {

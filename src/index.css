@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+}
+
 *,
 *::after,
 *::before {
@@ -7,4 +18,5 @@
 
 html {
   box-sizing: border-box;
+  --black-two: #121212;
 }

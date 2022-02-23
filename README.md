@@ -13,7 +13,7 @@ Bookstore is a website to manage collection of books. It is a Single Page App (S
 
 ## Live Demo
 
-- live link coming soon!
+- [live link](https://bookstore-cms-tek.netlify.app/)
 
 ## Getting Started
 - Install Node.js ^12.13
@@ -46,6 +46,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse Inc](https://www.microverse.org/)
+- React Circular Progressbar component is developed by [Kevin Qi](https://github.com/kevinsqi/react-circular-progressbar)
 
 ## 📝 License
 

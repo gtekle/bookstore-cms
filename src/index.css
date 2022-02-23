@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: local('RobotoSlab'), url('./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  font-weight: 700;
+  src: local('RobotoSlab'), url('./assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('ttf');
+}
+
 *,
 *::after,
 *::before {
@@ -7,4 +29,8 @@
 
 html {
   box-sizing: border-box;
+
+  --black-two: #121212;
+  --white: #e8e8e8;
+  --pinkish-grey: #c4c4c4;
 }

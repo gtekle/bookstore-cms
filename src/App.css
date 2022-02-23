@@ -1,16 +1,42 @@
 body {
-  font-size: 16px;
+  background-color: #f5f6fa;
+  padding: 5.313rem 3.75rem 7.688rem 6.25rem;
+}
+
+#root {
+  margin: 0 2.5rem 4.063rem 0;
+  padding: 0 0 16.625rem;
+  border-radius: 4px;
+  box-shadow:
+    0 0 60px 0 rgba(0, 0, 0, 0.1),
+    30px 30px 60px -15px rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
+  outline-color: rgba(0, 0, 0, 0.05);
 }
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px 5%;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--white);
+}
+
+.logo-nav-container {
+  display: flex;
 }
 
 .logo {
-  margin-right: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: Montserrat, Arial, serif;
 }
 
 .nav-list {
@@ -21,23 +47,275 @@ body {
 }
 
 .nav-item {
-  margin-right: 16px;
+  margin: 1.125rem 2.563rem 0.688rem 0;
 }
 
-.book-list {
-  padding: 16px 5%;
+.nav-item a {
+  text-decoration: none;
+  color: var(--black-two);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.profile-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--white);
+  background: none;
+}
+
+.profile-icon {
+  color: #0290ff;
 }
 
 .book {
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
+  align-items: stretch;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.book-detail {
+  width: 40%;
+}
+
+.book-detail > p {
+  width: 100%;
+}
+
+.book-detail p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.book-category {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+}
+
+.book-title {
+  margin: 0.188rem 20.188rem 0 0;
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+
+.book-author {
+  margin: 0.25rem 0 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.book-detail button {
+  cursor: pointer;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin: 1.3rem 0.938rem 0.125rem 0;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background: none;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2.125rem;
+  gap: 1rem;
+  width: 25%;
+}
+
+.circle-wrap {
+  min-width: 50px;
+  height: 50px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.progress-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-percentage {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.progress-completed {
+  opacity: 0.5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.vertical-separator {
+  align-self: flex-start;
+  width: 1px;
+  height: 6.375rem;
+  background-color: var(--white);
+  border: none;
+}
+
+.current-chapter-container {
+  width: 30%;
+  padding-left: 3.125rem;
+}
+
+.current-chapter {
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  opacity: 0.5;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.current-lesson {
+  font-family: RobotoSla, Arial, Helvetica, sans-serif;
+  margin: 0.43rem 0 0;
+  opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.btn-update-progress {
+  background: none;
+  border: none;
+  margin: 1.3rem 0 0;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.add-book-container {
+  margin: 2.313rem 6.25rem 0;
+  padding: 0 0 2rem;
+}
+
+.add-book-container hr {
+  margin: 2rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  border: none;
+}
+
+.add-book-container .add-book-section-title {
+  margin: 1.5rem 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  text-transform: uppercase;
 }
 
 .form-add-book {
-  padding: 16px 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.categories-container {
-  padding: 16px 5%;
+.form-add-book #book-title {
+  width: 40%;
+  padding: 0.813rem 3.688rem 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--black-two);
+}
+
+.form-add-book #category {
+  width: 30%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--white);
+  background-color: #fafafa;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--black-two);
+}
+
+.form-add-book .btn-submit {
+  width: 20%;
+  cursor: pointer;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
 }

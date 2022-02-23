@@ -1,5 +1,14 @@
 body {
-  font-size: 16px;
+  background-color: #f5f6fa;
+  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+}
+
+#root {
+  margin: 0 2.5rem 4.063rem 0;
+  padding: 0 0 49.625rem;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
 }
 
 .header {

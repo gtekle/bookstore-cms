@@ -7,8 +7,9 @@ body {
   margin: 0 2.5rem 4.063rem 0;
   padding: 0 0 16.625rem;
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1),
-              30px 30px 60px -15px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 0 60px 0 rgba(0, 0, 0, 0.1),
+    30px 30px 60px -15px rgba(0, 0, 0, 0.2);
   background-color: #fafafa;
   outline-color: rgba(0, 0, 0, 0.05);
 }
@@ -106,7 +107,6 @@ body {
   font-size: 0.875rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  
 }
 
 .book-title {
@@ -163,7 +163,7 @@ body {
 }
 
 .progress-percentage {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -257,7 +257,7 @@ body {
 
 .add-book-container .add-book-section-title {
   margin: 1.5rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
